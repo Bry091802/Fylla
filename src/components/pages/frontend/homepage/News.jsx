@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const LatestNews = () => {
+const News = ({ title }) => {
   return (
     <section className="py-16 border-b border-light">
       <div className="container">
         <div className="flex justify-between items-center py-12 border-b border-t border-light mb-10">
           <h2 className="uppercase text-center text-[80px] font-normal font-[syne] mb-0">
-            Latest News
+            {title}
           </h2>
           <Link to="/" className="btn-animate" data-text="See All">
             See All
@@ -24,7 +24,7 @@ const LatestNews = () => {
             <small className="uppercase text-[15px] font-[syne] block my-3">
               Branding
             </small>
-            <Link to="/" className="text-2xl">
+            <Link to="/single" className="text-2xl">
               Things to Look for When Comparing Branding Alternatives
             </Link>
           </div>
@@ -62,4 +62,4 @@ const LatestNews = () => {
   );
 };
 
-export default LatestNews;
+export default News;

@@ -20,7 +20,6 @@ const colorObject = colors.reduce((acc, color) => {
   return acc;
 }, {});
 
-
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -41,11 +40,10 @@ export default {
           "linear-gradient(90deg, transparent, rgba(var(--secondary), .8), transparent )",
       },
 
-      keyframes:{
+      keyframes: {
         rotate: {
-          "100%": {transform: "rotate(360deg)"},
+          "100%": { transform: "rotate(360deg)" },
         },
-
 
         loading: {
           "0%": { transform: "translateX(-100%)" },
@@ -57,7 +55,7 @@ export default {
           "30%, 50%, 70%": { transform: "translate3d(-4px, 0, 0)" },
           "40%, 60%": { transform: "translate3d(4px, 0, 0)" },
         },
-      }
+      },
     },
   },
   plugins: [],
